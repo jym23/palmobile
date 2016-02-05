@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jqm-custom.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.climate-controller.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">-->
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.cycle.all.js"></script>-->
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/helpers/jquery.banner-cycle-1.0.js"></script>
+
+    <!-- helper js files to load contents -->
+    <script type="text/javascript" src="js/helpers/custom_plugins.js"></script>
+    <script type="text/javascript" src="js/helpers/menus_content.js"></script>
+    <script type="text/javascript" src="js/helpers/contents-controller.js"></script>
+    <script type="text/javascript" src="js/helpers/app.js"></script>
+    <script type="text/javascript" src="js/helpers/jquery.climate-controller.js"></script>
+    <script type="text/javascript" src="js/helpers/gallery.js"></script>
+    <!-- end of helper js files to load contents -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/helpers/jquery.plugin-controls.js"></script>
+</head>
+<body>
+<div data-role="page" id="main">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left"></div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div id="sliding-menu" class="ui-block-c text-align-right" style="margin-top: 5px;">
+                    <a href="#menu-panel">
+                        <img id="toggle-menu" src="images/menu_list_icon.png" width="70">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="main-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title">Main Menu</p>
+        </div>
+        <div id="main-menus" class="page-main-menus">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="#digital_tv"><img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_digital_tv.png"></a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_my_hotel">
+                        <a href="#my_hotel" data-transition="slide">
+                            <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_my_hotel.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_promotions">
+                        <a href="#promotions" data-transition="slide"><img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_promotions.png"></a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_wine_dine">
+                        <a href="#winedine"><img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_wine_ dine.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#in-room-dining">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_in_room_dining.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#room-directory">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_room_directory.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#guest-services">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_guest_services.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#my-bills">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_my_bills.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="http://119.73.222.43:3000/esurvey/">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_e_survey.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#transportation">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_transportation.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#free_news_online">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_news_online.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="https://www.google.com/maps/place/Palvision+Singapore+Pte+Ltd/@1.3068911,103.8271114,17z/data=!4m2!3m1!1s0x31da198ccde6ce25:0xdee01c5d6f186025?hl=en-US">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_find_us.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#explore">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_explore.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#my-pictures" id="btn-my-pictures">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_my_pictures.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#my-videos">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/btn_video_gallery.png">
+                    </a>
+                </div>
+                <div class="ui-block-b"></div>
+            </div>
+        </div>
+        <div data-role="panel" id="menu-panel" data-position="right" data-display="overlay">
+            <h4 class="menu-title text-align-center">
+                OPTIONS
+                <a href="#" data-rel="close" class="close-panel">
+                    <span><img id="toggle-menu" src="images/menu-icons/done.png" style="width:25px;"></span>
+                </a>
+            </h4>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <div class="brightness-wrapper">
+                        <input type="range" name="brightness" id="brightness" value="60" min="0" max="100" />
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="e-icons" data-id="messages">
+                        <a href="#messages">
+                            <img src="images/menu-icons/messages.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="e-icons" data-id="connectivity">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="wifi">
+                            <img src="images/menu-icons/connectivity.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="e-icons" data-id="in_room_controls">
+                        <a href="#inroomcontrols">
+                            <img src="images/menu-icons/in_room_controls.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="e-icons" data-id="hotspot">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="tether_settings">
+                            <img src="images/menu-icons/hotspot.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="e-icons" data-id="local_weather">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="com.accuweather.android" data-isapp="true">
+                            <img src="images/menu-icons/local_weather.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="e-icons" data-id="bluetooth">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="bluetooth">
+                            <img src="images/menu-icons/bluetooth.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="e-icons" data-id="wifi_remote_control">
+                        <a href="#wifi-remote-control">
+                            <img src="images/menu-icons/wifi_remote_control.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="e-icons" data-id="3g4g">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="data_roaming">
+                            <img src="images/menu-icons/3g4g.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="e-icons" data-id="chat">
+                        <a href="http://119.73.222.42:3000/webrtc/"><img src="images/menu-icons/chat.png"></a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="e-icons" data-id="nfc">
+                        <a href="javascript:void(0);" class="panel-btn-clk" data-setting="nfc_settings">
+                            <img src="images/menu-icons/NFC.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="digital_tv">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <ul data-parent="digital_tv" class="carousel-menu"></ul>
+        <div class="banner"></div>
+        <div class="channels ui-grid-a"></div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="my_hotel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="my_hotel-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">My Hotel</p>
+        </div>
+        <div id="my_hotel-menus" class="page-main-menus">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#daily_activities">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_daily_activities.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#accommodation" data-transition="slide">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_accommodation.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#facilities" data-transition="slide">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_facilities.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#spa">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_spa.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#souvenirs">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_souvenirs.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#hotel-gallery">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_gallery.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#hotel-map">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_hotel_map.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="http://www.palvision.com/">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_our_website.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#social">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_social.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="https://bookings.ihotelier.com/The-Sun-Siyam-Iru-Fushi-Maldives/bookings.jsp?DateIn=12/21/2015&Adults=2&Children=&hotelId=85302&Rooms=1&Length=7">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/btn_book_your.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="promotions">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade">
+                        <img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;">
+                    </a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <ul data-parent="promotions" class="carousel-menu"></ul>
+        <div class="banner"></div>
+        <div class="channels"></div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="daily_activities">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="accommodation">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="winedine">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <ul data-parent="winedine" class="carousel-menu"></ul>
+        <div class="banner"></div>
+        <div class="channels"></div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="facilities">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="spa">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="spa-queued-items" class="cart">
+            <h4>Your Cart</h4>
+            <p class="empty-cart" align="center">Cart is empty. Select now your items!</p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="souvenirs">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="souvenirs-queued-items" class="cart">
+            <h4>Your Cart</h4>
+            <p class="empty-cart" align="center">Cart is empty. Select now your items!</p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="hotel-gallery" class="with-image-carousel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="hotel-map" class="with-image-carousel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="social" class="with-image-carousel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="social-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">Social</p>
+        </div>
+        <div id="icons" class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="https://www.facebook.com/">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/social/btn_facebook.png">
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="https://www.instagram.com/">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/social/btn_instagram.png">
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="https://www.pinterest.com/">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/social/btn_pinterest.png">
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="https://www.youtube.com/">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/my_hotel/social/btn_youtube.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="in-room-dining">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="in-room-dining-queued-items" class="cart">
+            <h4>Your Cart</h4>
+            <p class="empty-cart" align="center">Cart is empty. Select now your items!</p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="guest-services" class="with-image-carousel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="guest-services-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">Guest Services</p>
+        </div>
+        <div id="guest-services-menus" class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#az-directory">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_az_directory.png">
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#e-laundry">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_e_laundry.png">
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="#request-amenities">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_request_amenities.png">
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#room-cleaning">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_room_cleaning.png">
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="#tray-pick-up">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_tray_pick_up.png">
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#turndown-service">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_turn_down_service.png">
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="#wakeup-call">
+                    <img src="http://119.73.222.42:8080/palmobiledata/buttons/guest_services/btn_wake_up_call.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="az-directory">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="e-laundry">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="e-laundry-queued-items" class="cart">
+            <h4>Your Cart</h4>
+            <p class="empty-cart" align="center">Cart is empty. Select now your items!</p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="request-amenities">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="request-amenities-queued-items" class="cart">
+            <h4>Your Cart</h4>
+            <p class="empty-cart" align="center">Cart is empty. Select now your items!</p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="room-cleaning">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="booked">
+            <div class="booked-wrapper">
+                <div class="header-banner" style="margin-bottom:15px;text-align: center;">
+                    <img src="images/guestservices/room-cleaning.jpg">
+                </div>
+                <label><b style="color:#fff;">DATE</b></label>
+                <div><input type="text" id="room-cleaning-date" name="room-cleaning-date"></div>
+                <label><b style="color:#fff;">TIME</b></label>
+                <div><input type="time" id="room-cleaning-time" name="room-cleaning-time"></div>
+                <div style="text-align:center;">
+                    <a href="javascript:void(0);" data-title="Room Cleaning is now set!" class="app-confirm-btn" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                        <img src="images/btns/btn_confirm2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="tray-pick-up">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="booked">
+            <div class="booked-wrapper">
+                <div class="header-banner" style="margin-bottom:15px;text-align: center;">
+                    <img src="images/guestservices/tray-pick-up.jpg">
+                </div>
+                <h1 style="text-align:center;color:#fff;">Tray Pick-Up</h1>
+                <div class="">
+                    <div style="display:none;">
+                        <input type="text" name="tip-date" id="tip-date">
+                    </div>
+                    <div style="display:none;">
+                        <input type="text" name="tip-time" id="tip-time">
+                    </div>
+
+                    <label><b style="color:#fff;">DATE</b></label>
+                    <div><input type="text" id="tray-pickup-date" name="tray-pickup-date"></div>
+                    <label><b style="color:#fff;">TIME</b></label>
+                    <div><input type="time" id="tray-pickup-time" name="tray-pickup-time"></div>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a" align="right">
+                            <label class="radio-lbl"><input type="radio" name="room-type" data-role="none" checked="checked">Inside Room</label>
+                        </div>
+                        <div class="ui-block-b" align="left">
+                            <label class="radio-lbl"><input type="radio" name="room-type" data-role="none">Outside Room</label>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <a href="javascript:void(0);" data-title="Tray Pick-up is now set!" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                        <img src="images/btns/btn_confirm2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="turndown-service">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="booked">
+            <div class="booked-wrapper">
+                <div class="header-banner" style="margin-bottom:15px;text-align: center;">
+                    <img src="images/guestservices/turndown-service.jpg">
+                </div>
+                <label><b style="color:#fff;">DATE</b></label>
+                <div><input type="text" id="room-cleaning-date" name="room-cleaning-date"></div>
+                <label><b style="color:#fff;">TIME</b></label>
+                <div><input type="time" id="room-cleaning-time" name="room-cleaning-time"></div>
+                <div style="text-align:center;">
+                    <a href="javascript:void(0);" data-title="Turndown Service is now set!" class="app-confirm-btn" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                        <img src="images/btns/btn_confirm2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="wakeup-call">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="booked" class="guestservices-wrapper">
+            <div class="booked-wrapper">
+                <div class="header-banner" style="margin-bottom:15px;text-align: center;">
+                    <img src="images/guestservices/alarm.png">
+                </div>
+                <h1 align="center" style="color:#fff;">Wake Up Call</h1>
+                <label><b style="color:#fff;">SET DATE</b></label>
+                <div><input type="text" id="room-cleaning-date" name="room-cleaning-date"></div>
+                <label><b style="color:#fff;">SET TIME</b></label>
+                <div><input type="time" id="room-cleaning-time" name="room-cleaning-time"></div>
+                <div style="text-align:center;">
+                    <a href="javascript:void(0);" data-title="Alarm is now set!" class="app-confirm-btn" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                        <img src="images/btns/btn_confirm2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+
+<!--Free Online News Content Starts-->
+<div data-role="page" id="free_news_online" class="with-image-carousel">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="fno-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">News Online</p>
+        </div>
+        <div id="fno-menus">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://www.bbc.com/news" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_bbc.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.bloomberg.com/bw/authors/3344-bloomberg-news" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_bloomberg.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://www.channelnewsasia.com/mobile" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_channel_news_asia.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.cnbc.com/world/?region=world" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_Cnbc.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://edition.cnn.com/" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_CNN.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.dailymail.co.uk/news/index.html" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_daily_mail.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://www.mirror.co.uk/news/" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_daily_mirror.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://m.foxnews.com/" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_fox_news.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://m.france24.com/en/" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_france_24.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.independent.co.uk/" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_independent.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://www.nbcnews.com/" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_nbc_news.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.nbcnews.com/" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_russia_today.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-id="btn_digital_tv">
+                        <a href="http://news.sky.com/" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_sky_news.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div data-id="btn_accommodation">
+                        <a href="http://www.telegraph.co.uk/news/" data-transition="slide" class="ui-link">
+                            <img src="http://119.73.222.42:8080/palMobile/buttons/news/btn_telegraph.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<!--Free Online News Contents End-->
+
+<div data-role="page" id="room-directory">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+
+<div data-role="page" id="my-bills">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <h3 align="center">
+                PALVISION<br/>
+                <span style="font-size: 12px;font-weight: normal;"><i>Guest Name</i></span>
+            </h3>
+            <h3 align="center">
+                0210<br/>
+                <span style="font-size: 12px;font-weight: normal;"><i>Room No.</i></span>
+            </h3>
+            <h3 align="center">10:45AM, Wednesday July 8, 2015<br/>
+                <span style="font-size: 12px;font-weight: normal;"><i>Check-in Date</i></span>
+            </h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Item List</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Laundry</td>
+                    <td>2015-11-07</td>
+                    <td>$38.50</td>
+                </tr>
+                <tr>
+                    <td>Laundry Set</td>
+                    <td>2015-11-07</td>
+                    <td>$15.50</td>
+                </tr>
+                <tr>
+                    <td>Dinner Set</td>
+                    <td>2015-11-07</td>
+                    <td>$18.50</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Total: $72.50</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+
+<!-- Explore section -->
+<div data-role="page" id="explore">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="explore-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">Explore</p>
+        </div>
+        <div id="explore-menus" class="page-main-menus">
+            <div class='ui-grid-a'>
+                <div class="ui-block-a">
+                    <a href="#arts-and-culture">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_art_culture.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#attractions">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_attractions.png">
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#golf">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_golf.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nature-wildlife">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_nature_wildlife.png">
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#nightlife">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_nightlife.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#shopping">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/explore/btn_shopping.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+
+<div data-role="page" id="arts-and-culture">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="attractions">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="golf">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="nature-wildlife">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="nightlife">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="shopping">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<!-- end of Explore -->
+
+<!-- #Transportation -->
+<div data-role="page" id="transportation">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div id="transportation-carousel" class="parallax top slider">
+            <div>
+                <div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+            </div>
+            <p class="overlay-title" style="z-index:1000;">Transportation</p>
+        </div>
+        <div id="transportation-menus" class="page-main-menus">
+            <div class='ui-grid-a'>
+                <div class="ui-block-a">
+                    <a href="#taxi-request">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/transportation/btn_taxi_request.png">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#airportshuttle">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/transportation/btn_airportshuttle.png">
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="http://www.changiairport.com/en/flight/arrivals.html">
+                        <img src="http://119.73.222.42:8080/palmobiledata/buttons/transportation/btn_flights.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="taxi-request">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div class="form-handler" id="taxi-request-form">
+            <form>
+                <div>
+                    <label>DATE</label>
+                    <input type="text" id="tr-date" name="tr-date" placeholder="DD-MM-YY">
+                </div>
+                <div>
+                    <label>TIME</label>
+                    <input type="time" id="tr-time" name="tr-time" placeholder="HH:MM">
+                </div>
+                <div>
+                    <label>No. of Passengers</label>
+                    <input type="number" id="tr-no-passenger" name="tr-no-passenger" placeholder="input number">
+                </div>
+                <div>
+                    <label>FROM</label>
+                    <input type="text" id="tr-from" name="tr-from" placeholder="Enter Origin">
+                </div>
+                <div>
+                    <label>TO</label>
+                    <input type="text" id="tr-from" name="tr-from" placeholder="Enter Destination">
+                </div>
+                <div>
+                    <p align="center" style="margin:0;">
+                        <a href="javascript:void(0);" data-parent="transportation" data-title="Taxi request sent!" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                            <img src="images/btns/btn_confirm2.png">
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="airportshuttle">
+    <div role="main" class="ui-content">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div class="form-handler" id="taxi-request-form">
+            <form>
+                <div>
+                    <label>DATE</label>
+                    <input type="text" id="tr-date" name="tr-date" placeholder="DD-MM-YY">
+                </div>
+                <div>
+                    <label>TIME</label>
+                    <input type="time" id="tr-time" name="tr-time" placeholder="HH:MM">
+                </div>
+                <div>
+                    <label>No. of Passengers</label>
+                    <input type="number" id="tr-no-passenger" name="tr-no-passenger" placeholder="input number">
+                </div>
+                <div>
+                    <p align="center" style="margin:0;">
+                        <a href="javascript:void(0);" data-parent="transportation" data-title="Airport Shuttle sent!" class="app-confirm-btn" data-confirmbox="room-cleaning-confirm">
+                            <img src="images/btns/btn_confirm2.png">
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<!-- end of Transportation# -->
+
+<!-- options page -->
+<div data-role="page" id="messages">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="inroomcontrols">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div class="irc-wrpr">
+            <div style="text-align:center;">
+                <ul class="irc-controls">
+                    <li class="active"><span><a href="javascript:void(0);" id="lightning" class="irc-ctrl">Lightning</a></span></li>
+                    <li><span><a href="javascript:void(0);" id="climate" class="irc-ctrl">Climate</a></span></li>
+                    <li><span><a href="javascript:void(0);" id="curtains" class="irc-ctrl">Curtains</a></span></li>
+                </ul>
+            </div>
+            <div class="irc-wrapper" id="div-lightning">
+                <div>
+                    <h1 align="center" style="font-weight:normal;">Lightning Control</h1>
+                    <div class="float-whole frst">
+                        <div class="float-whole-left">
+                            <p align="center">Master</p>
+                            <img src="images/inroomcontrols/toggle_btn_master_normal.png" class="irc-ctrl-img" data-on="images/inroomcontrols/toggle_btn_master_pressed.png" data-off="images/inroomcontrols/toggle_btn_master_normal.png">
+                        </div>
+                        <div class="float-whole-right">
+                            <div class="dimmer-wrapper" style="margin-top: 30px;">
+                                <label style="margin-left: 25px;">
+                                    Dimmer
+                                    <span id="dimmer-value" style="margin-left: 60px;">20%</span>
+                                </label>
+                                <input type="range" name="dimmer" id="dimmer" value="20" min="0" max="100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-whole scnd">
+                        <div class="float-whole-left">
+                            <p align="center">Bed-L</p>
+                            <img src="images/inroomcontrols/toggle_btn_bed_right_normal.png" class="irc-ctrl-img" data-on="images/inroomcontrols/toggle_btn_bed_right_pressed.png" data-off="images/inroomcontrols/toggle_btn_bed_right_normal.png">
+                        </div>
+                        <div class="float-whole-right">
+                            <p align="center">Bed-R</p>
+                            <img src="images/inroomcontrols/toggle_btn_bed_left_normal.png" class="irc-ctrl-img" data-on="images/inroomcontrols/toggle_btn_bed_left_pressed.png" data-off="images/inroomcontrols/toggle_btn_bed_left_normal.png">
+                        </div>
+                    </div>
+                    <div class="float-whole scnd">
+                        <div class="float-whole-left">
+                            <p align="center">Reading-L</p>
+                            <img src="images/inroomcontrols/toggle_btn_reading_left_normal.png" class="irc-ctrl-img" data-on="images/inroomcontrols/toggle_btn_reading_left_pressed.png" data-off="images/inroomcontrols/toggle_btn_reading_left_normal.png">
+                        </div>
+                        <div class="float-whole-right">
+                            <p align="center">Reading-R</p>
+                            <img src="images/inroomcontrols/toggle_btn_reading_right_normal.png" class="irc-ctrl-img" data-on="images/inroomcontrols/toggle_btn_reading_right_pressed.png" data-off="images/inroomcontrols/toggle_btn_reading_right_normal.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="irc-wrapper hide" id="div-climate">
+                <div>
+                    <h1 align="center" style="font-weight:normal;">Climate Control</h1>
+                    <div class="climate-ctrl-content">
+                        <div id="climate-controller">
+                            <div class="spr1 bg">
+                                <div class="spr2 bg">
+										<span id="climate-handler" class="climate-handler rotate-19">
+											<img src="images/climate/arrow.png">
+										</span>
+                                    <div class="spr3 bg">
+                                        <span id="climate-value">19&deg;C</span>
+                                        <div id="btn-ctrls">
+												<span id="btn-minus">
+													<img src="images/climate/minus.png" data-img="minus">
+												</span>
+												<span id="btn-plus">
+													<img src="images/climate/plus.png" data-img="plus">
+												</span>
+                                            <input type="hidden" id="cli-ctrl-value" name="cli-ctrl-value" value="19">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-left: 30px;">Heat Mode</p>
+                        <ul id="heat-mode" class="irc-controls">
+                            <li class="active">
+									<span>
+										<a href="javascript:void(0);" id="auto" class="curtains-ctrl">Auto</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="off" class="curtains-ctrl">Off</a>
+									</span>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 30px;">Fan Mode</p>
+                        <ul id="fan-mode" class="irc-controls" style="margin-bottom: 30px;">
+                            <li class="active">
+									<span>
+										<a href="javascript:void(0);" id="auto" class="curtains-ctrl">Auto</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="off" class="curtains-ctrl">Low</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="off" class="curtains-ctrl">Med</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="off" class="curtains-ctrl">High</a>
+									</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="irc-wrapper hide" id="div-curtains">
+                <div>
+                    <h1 align="center" style="font-weight:normal;">Curtains</h1>
+                    <div class="climate-ctrl-content">
+                        <ul id="ul-curtains" class="irc-controls">
+                            <li class="active">
+									<span>
+										<a href="javascript:void(0);" id="curtains" class="curtains-ctrl">Curtains</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="sheer" class="curtains-ctrl">Sheer</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="all" class="curtains-ctrl">All</a>
+									</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="curtains-images">
+                        <div style="text-align:center;">
+                            <img src="images/inroomcontrols/img_curtains.png" id="img-curtains">
+                            <img src="images/inroomcontrols/img_sheer.png" class="hide" id="img-sheer">
+                            <img src="images/inroomcontrols/img_curtains_all.png" class="hide" id="img-all">
+                        </div>
+                    </div>
+                    <div style="margin-bottom:25px;">
+                        <ul id="ul-curtains-two" class="irc-controls">
+                            <li class="active">
+									<span>
+										<a href="javascript:void(0);" id="open" class="curtains-ctrl2">Open</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="close" class="curtains-ctrl2">Close</a>
+									</span>
+                            </li>
+                            <li>
+									<span>
+										<a href="javascript:void(0);" id="stop" class="curtains-ctrl2">Stop</a>
+									</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<div data-role="page" id="wifi-remote-control">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div class="remote-control-content">
+            <p style="text-align:center"><img src="images/remotecontrol.png"></p>
+            <p style="text-align:center;margin: 10px 25px;">
+                You may now use your personal devices as a personal WIFI remote control! Simply connect to the HotSpot and scan the QR code on the TV.
+            </p>
+            <p style="text-align:center;">
+                <a href="javascript:void(0);" id="scan-now">
+                    <img src="images/btns/btn_scan_now.png" class="qr-code-scan" style="border-radius: 4px;width: 110px;">
+                </a>
+            </p>
+        </div>
+    </div>
+    <div data-role="footer"><h1></h1></div>
+</div>
+<!-- end options page -->
+
+<!-- galleries -->
+<div data-role="page" id="my-pictures">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c">
+                    <p align="right" id="gallery-controls" style="display:none;text-align:center;position:relative;top:3px;">
+                        <a href="javascript:void(0);" id="delete-imgs"><img src="images/btns/btn_bin.png" style="margin-right:10px;"></a>
+                        <a href="javascript:void(0);" id="toogle-share-box"><img src="images/btns/btn_share.png"></a>
+                    </p>
+                    <p id="tag-capture" align="center">
+                        <a href="javascript:void(0);" id="btn-camera-capture"><img src="images/btns/btn_camera.png" style="position:relative;top:10px;left:4px;"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="my-pictures-gallery" style="margin-top:81px;">
+            <div class="ui-grid-b"></div>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="my-videos">
+    <div role="main" class="ui-content has-whole-bg">
+        <div class="ui-content-header">
+            <div class="ui-grid-b">
+                <div id="back-wrapper" class="ui-block-a text-align-left">
+                    <a href="#" data-rel="back" data-transition="slide">
+                        <img id="btn_back" src="images/btn_back.png" style="margin-top:20px;">
+                    </a>
+                </div>
+                <div id="logo" class="ui-block-b text-align-center">
+                    <a href="#main" data-transition="fade"><img src="images/logoflat.png" width="140" class="palvisionHeaderLogoImg" style="margin-top: 12px;"></a>
+                </div>
+                <div class="ui-block-c">
+                    <p align="right" id="gallery-controls" style="display:none;text-align:center;position:relative;top:3px;">
+                        <a href="javascript:void(0);" id="delete-vids"><img src="images/btns/btn_bin.png" style="margin-right:10px;"></a>
+                        <a href="javascript:void(0);" id="toogle-share-box"><img src="images/btns/btn_share.png"></a>
+                    </p>
+                    <p id="tag-capture" align="center">
+                        <a href="javascript:void(0);" id="btn-video-capture"><img src="images/btns/btn_video.png" style="position:relative;top:10px;left:4px;"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="my-videos-gallery" style="margin-top:81px;">
+            <div class="ui-grid-b"></div>
+        </div>
+        <div id="logs" style="margin-top:80px;display:none;">
+            <h1>hello world!</h1>
+        </div>
+    </div>
+</div>
+<!-- end of galleries -->
+
+<!-- app confirm box -->
+<div class="app-confirm" style="display:none;" id="room-cleaning-confirm">
+    <div>
+        <div>
+            <div class="confirm-one">
+                <p style="margin-top:5px;margin-left:5px;">Are you sure?</p>
+                <div>
+                    <p style="margin-bottom:5px;" align="right">
+                        <a href="javascript:void(0);" data-parent="room-cleaning-confirm" class="confirm-no" style="color:#00A058;text-decoration:none;margin-right:35px;"><b>NO</b></a>
+                        <a href="javascript:void(0);" data-parent="confirm-one" data-next="confirm-two"  class="confirm-yes" style="color:#00A058;text-decoration:none;margin-right:20px;"><b>YES</b></a>
+                    </p>
+                </div>
+            </div>
+            <div class="confirm-two" style="display:none;">
+                <p style="margin-top:5px;margin-left:5px;" class="title">Room Cleaning has been set!</p>
+                <div>
+                    <p style="margin-bottom:5px;" align="right">
+                        <a href="javascript:void(0);" class="confirm-ok" data-parent="room-cleaning-confirm" style="color:#00A058;text-decoration:none;margin-right:35px;display:block;"><b>OK</b></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of app confirm box -->
+<div class="cart-success" style="display:none;">
+    <div class="display-table">
+        <div class="display-table-cell">
+            <div>
+                <span><img src="images/btns/btn_check.png"></span>
+                <h1 style="margin:15px 0 0;">ADDED ITEM SUCCESSFULLY</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="share-buttons" style="width:100%;position:fixed;bottom:-50%;left:0;z-index:1001;background:#fff;display:none;opacity:0;">
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="text-align:center;">
+            <a href="javascript:void(0);" class="btn-socialshare" data-id="mail">
+                <img src="images/social/mail.png" style="width:50%;height:auto;padding:12px;">
+            </a>
+        </div>
+        <div class="ui-block-b" style="text-align:center;">
+            <a href="javascript:void(0);" class="btn-socialshare" data-id="gmail">
+                <img src="images/social/gmail.png" style="width:50%;height:auto;padding:12px;">
+            </a>
+        </div>
+        <div class="ui-block-a" style="text-align:center;">
+            <a href="javascript:void(0);" class="btn-socialshare" data-id="fb">
+                <img src="images/social/facebook.png" style="width:50%;height:auto;padding:12px;">
+            </a>
+        </div>
+        <div class="ui-block-b" style="text-align:center;">
+            <a href="javascript:void(0);" class="btn-socialshare" data-id="twt">
+                <img src="images/social/twitter.png" style="width:50%;height:auto;padding:12px;">
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/helpers/trigger.js"></script>
+</body>
+</html>

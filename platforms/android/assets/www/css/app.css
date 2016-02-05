@@ -1,0 +1,760 @@
+.app-header,
+.ui-content-header{
+	width: 100%;
+	height: 70px;
+	padding: 5px 0;
+}
+.app-header .ui-grid-b,
+.app-header .ui-grid-b div[class^="ui-block"],
+.ui-content-header .ui-grid-b,
+.ui-content-header .ui-grid-b div[class^="ui-block"]{
+	height: 100%;
+	margin-bottom: 5px;
+}
+.ui-content{position: relative;}
+.ui-content .banner{
+	position: fixed;
+	width: 100%;
+	height: 360px;
+	top: 79px;
+	background-repeat: no-repeat; 
+	background-position: 50%;
+	background-attachment: inherit;
+	background-size: 100% auto; 
+}
+#hotel-gallery .banner{
+	top: 170px;
+}
+.ui-content-header{
+	position: fixed;
+	top: 0;z-index: 1001;
+}
+.ui-content .banner img{
+	width: 100%;
+}
+.ui-content .channels,
+.ui-content .desc{
+	margin-top: 440px;
+	min-height: 250px;
+}
+.ui-content .carousel-menu li{
+	transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+}
+.ui-content .carousel-menu li.selected{
+	position: relative;
+	background-color: rgba(0,0,0,0.7); 
+}
+
+.ui-content .parallax{
+	margin-top: 80px;
+}
+.ui-content .imgcycle-wrapper{
+	margin-top: 530px;
+	padding: 15px 0;
+	background: rgba(0,0,0,0.4);
+}
+.ui-content .table-wrapper{
+	margin-top: 440px;
+	padding: 15px;
+	font-size: 15px;
+}
+.ui-content .table-wrapper h4:first-child{
+	margin: 0 0 10px;
+	font-size: 20px;
+}
+.ui-content .imgcycle-wrapper .img_cycle .gallery-img>.gallery-img-btn>img{
+	width: 90%;
+}
+.ui-content .table{
+	border-collapse: collapse;
+	font-size: 14px;
+	width: 100%;	
+}
+.ui-content .table tr{
+	border-bottom: 1px solid #ccc;
+}
+.ui-content .table tr td{
+	padding: 8px 5px;
+	vertical-align: top;
+}
+.ui-content .table-wrapper img{
+	width: 100%;
+}
+.ui-content .table-wrapper .overlay-title{
+	font-size: 14px;
+	bottom: 4px;
+}
+.ui-content .table-wrapper a.add-to-cart>img{
+	width: 85%;
+	margin: 8px 0;
+}
+.ui-content .table-wrapper .spa-wrapper{
+	width: 98%;
+}
+
+.ui-content .channels,
+.ui-content .table-wrapper{
+	background: #F5F5F5;
+	position: relative;z-index: 1;
+}
+.ui-dialog-contain{
+	background: #fff;
+}
+.ui-dialog-contain h2.title {
+	margin: 0;
+    padding: 10px;
+    background: #912217;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+.ui-dialog-contain #close-dialog {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+/** dialog */
+.ui-dialog.ui-page-active{
+	overflow: auto;
+}
+.ui-dialog-contain .spa-dialog-img img{
+	width: 100%;
+}
+.ui-dialog{
+	background-color: #D0D0D0!important;
+}
+.ui-dialog-contain .qty img{
+	vertical-align: middle;
+	width: 40px;
+}
+.ui-dialog-contain .qty .qty_handler{
+	padding: 0 20px;
+    font-size: 40px;
+    position: relative;
+    top: 8px;
+}
+.ui-dialog-contain .price{
+	margin: 30px 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.ui-dialog-contain .desc{
+	text-align: justify;
+    margin: 0 20px;
+    padding-bottom: 5px;
+}
+/* end of dialog */
+
+.cart-success{
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+.cart-success .display-table{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.cart-success .display-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.cart-success .display-table-cell div{
+	width:250px;
+	height: auto;
+	margin: 0 auto;
+	background: #fff;
+	text-align: center;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    padding: 10px 15px;
+    line-height: 1;
+}
+
+.cart .del-cart-itm img{
+	vertical-align: middle;
+    max-width: 30px;
+    padding-right: 10px;
+}
+.text-align-right{
+	text-align: right;
+}
+.text-align-left{
+	text-align: left;
+}
+.text-align-center{
+	text-align: center;
+}
+.e-icons img{
+	width: 70%;
+    margin: 8px 0;
+}
+.e-icons img:hover{
+	cursor: pointer;
+}
+.menu-title #toggle-menu{
+	float: right;
+    position: relative;
+    right: -15px;
+    top: -5px;
+}
+
+/* Swipe works with mouse as well but often causes text selection. */
+/* We'll deny text selecton on everything but INPUTs and TEXTAREAs. */
+#main :not(INPUT):not(TEXTAREA) {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#main-menus .ui-grid-a,
+#my_hotel-menus .ui-grid-a,
+#explore-menus .ui-grid-a,
+.page-main-menus .ui-grid-a{
+	line-height: 0;
+}
+#main-menus img,
+#my_hotel-menus img,
+#fno-menus img,
+#explore-menus img,
+.page-main-menus img{
+	width: 100%;
+	cursor: pointer;
+}
+.menu-title{
+	font-size: 20px;
+    margin: 10px auto 22px;
+    padding: 10px 10px 15px;
+    width: 80%;
+    border-bottom: 1px solid #59B1F7;
+    font-weight: normal;
+}
+
+#promotions .ui-content .channels div,
+#winedine .ui-content .channels div{
+	padding: 15px;
+}
+
+#spa .ui-content,
+#souvenirs .ui-content,
+#in-room-dining .ui-content,
+#e-laundry .ui-content,
+#request-amenities .ui-content{
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: auto 100%; 
+}
+#spa .ui-content .table-wrapper,
+#souvenirs .ui-content .table-wrapper,
+#in-room-dining .ui-content .table-wrapper,
+#e-laundry .ui-content .table-wrapper,
+#request-amenities .ui-content .table-wrapper
+{
+	height: 320px;
+	overflow: auto;
+	margin-top: 200px;
+	background: rgba(0,0,0,0.3);
+}
+#spa .ui-content .cart,
+#souvenirs .ui-content .cart,
+#in-room-dining .ui-content .cart,
+#e-laundry .ui-content .cart,
+#request-amenities .ui-content .cart{
+	padding: 5px;
+	margin: 5px 0;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+}
+#spa .ui-content .cart h4,
+#souvenirs .ui-content .cart h4,
+#in-room-dining .ui-content .cart h4,
+#e-laundry .ui-content .cart h4,
+#request-amenities .ui-content .cart h4{
+	margin: 2px auto 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#digital_tv .ui-content .channels div[class^="ui-block"]{
+	line-height: 0;
+}
+#digital_tv .ui-content .channels img{
+	width: 100%;
+}
+.overlay-title{
+	text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+	width: 100%;
+    margin: 0;
+    padding: 8px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 8;
+    background: rgba(0,0,0,0.5);
+}
+
+.arrow-up{
+	padding: 0!important;
+	position: relative;
+    top: -11px;
+    left: 43.5%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+}
+#itm{
+	margin: 5px 0;
+}
+#main-menus,
+#my_hotel-menus,
+#fno-menus,
+#explore-menus,
+.page-main-menus{
+	margin-top: 440px;
+	position: relative;
+	z-index: 7;
+	background-color: #fff; 
+}
+#hotel-gallery .ui-content{
+	background-image: url('../images/accomodation/hotel-gallery-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+#hotel-gallery .hotel-gallery-mask{
+	position: fixed;
+    top: 155px;
+    height: 17px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+#map{
+	margin-top: 80px;
+}
+#map img{
+	width: 100%;
+}
+#social #icons{
+	position: relative;
+	z-index: 1;
+	margin-top: 440px;
+}
+#social #icons div[class^="ui-block"],
+#guest-services-menus div[class^="ui-block"],
+#fno-menus div[class^="ui-block"]{
+	line-height: 0;
+}
+#social #icons img{
+	width: 100%;
+}
+#guest-services-menus{
+	margin-top: 440px;
+	position: relative;
+	z-index: 1;
+	background: #EAEAEA; 
+}
+#guest-services-menus div img{
+	width: 100%;
+}
+#room-cleaning #booked,
+#tray-pick-up #booked,
+#turndown-service #booked,
+.guestservices-wrapper{
+	margin-top: 105px;
+}
+#room-cleaning #booked .header-banner img,
+#tray-pick-up #booked .header-banner img,
+#turndown-service #booked .header-banner img{
+	width: 60%;
+	border-radius: 15px;
+}
+#room-cleaning .booked-wrapper,
+#tray-pick-up .booked-wrapper,
+#turndown-service .booked-wrapper,
+.guestservices-wrapper{
+	padding: 15px 15px;
+	background: rgba(0,0,0,0.4);
+}
+#room-cleaning .ui-content{
+	background-image: url('../images/guestservices/room-cleaning-bg.jpg'); 
+}
+#tray-pick-up .ui-content{
+	background-image: url('../images/guestservices/tray-pick-up-bg.jpg'); 
+}
+#turndown-service .ui-content{
+	background-image: url('../images/guestservices/turndown-service-bg.jpg'); 
+}
+#wakeup-call .ui-content{
+	background-image: url('../images/guestservices/wake-up-bg.jpg'); 
+}
+#room-directory .ui-content{
+	min-height: 500px;
+}
+#room-directory .ui-content .table-wrapper{
+	margin-top: 370px;
+}
+#my-bills .ui-content{
+	background-image: url('../images/portrait/my-bills-bg.jpg');
+}
+#taxi-request .ui-content,
+#airportshuttle .ui-content{
+	background-image: url('../images/portrait/transportation-bg.jpg');
+}
+.has-whole-bg{
+	background-size: 100%;/*background-size: 100% 100%;*/
+	background-position:50%;
+	background-attachment: inherit;
+}
+
+#my-bills .ui-content .table-wrapper{
+	background-color: rgba(0,0,0,0.4);
+    margin: 110px 0 35px;
+    padding: 30px 0 50px;
+    color: #fff;
+}
+#my-bills .ui-content .table-wrapper table{
+	width: 100%;
+}
+#my-bills .ui-content .table-wrapper table td{
+	text-align: center;
+}
+
+#messages .ui-content{
+	background-image: url('../images/portrait/messages-bg.jpg');
+}
+#wifi-remote-control .ui-content {
+	background-image: url('../images/bg_wireless_portrait.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.remote-control-content{
+	background: rgba(0,0,0,0.4);
+}
+#messages .list,
+.remote-control-content,
+.local-weather-content{
+	width: 100%;
+	margin: 110px 0 30px;
+	overflow: hidden;
+	color: #fff;
+}
+#messages .list .list-left{
+	width: 39.2%;
+	margin-right: 3px;
+	float: left;
+	min-height: 300px;
+	background-color: rgba(0,0,0,0.4);
+}
+#messages .list .clk-msg{
+	cursor: pointer;
+	border-bottom: 2px solid #fff;
+}
+#messages .list .list-left>div{
+	padding: 15px 0px 15px 15px;
+}
+#messages .list .list-right{
+	width: 60%;
+	float: left;
+	min-height: 300px;
+	background-color: rgba(0,0,0,0.4);
+}
+#messages .list .list-right>div{
+	padding: 15px;
+}
+#messages .list .list-right::after{
+	clear: both;
+}
+#messages .list .list-right input[type="button"]{
+	color: #2F2F2F;
+    border: 1px solid #eee;
+    background: #eee;
+    padding: 4px 8px 2px;
+    vertical-align: mi;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#inroomcontrols .ui-content{
+	background-image: url('../images/inroomcontrols/bg_remote.jpg');
+	color: #fff;
+}
+#inroomcontrols .irc-wrpr{
+	margin: 110px 0 30px;
+}
+#inroomcontrols .irc-wrpr .irc-controls{
+	width: 88%;
+	height: 40px;
+	color: #fff;
+	font-family: 'Century Gothic';
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+#inroomcontrols .irc-wrpr .irc-controls a{
+	padding: 10px 0;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	text-shadow: transparent;
+	-moz-text-shadow: transparent;
+	-webkit-text-shadow: transparent; 
+	text-align: center;
+}
+#inroomcontrols .irc-wrpr .irc-controls li:first-child{
+
+	border-top-left-radius: 14px;
+	-moz-border-top-left-radius: 14px;
+	-webkit-border-top-left-radius: 14px;
+
+	border-bottom-left-radius: 14px;
+	-moz-border-bottom-left-radius: 14px;
+	-webkit-border-bottom-left-radius: 14px;
+}
+#inroomcontrols .irc-wrpr .irc-controls li:last-child{
+	border-top-right-radius: 14px;
+	-moz-border-top-right-radius: 14px;
+	-webkit-border-top-right-radius: 14px;
+
+	border-bottom-right-radius: 14px;
+	-moz-border-bottom-right-radius: 14px;
+	-webkit-border-bottom-right-radius: 14px;
+}
+#inroomcontrols .irc-wrpr .irc-controls li{
+	border: 1px solid #292929;
+	float: left;
+	width: 32.5%;
+	background-color: #ccc; 
+}
+#inroomcontrols .irc-wrpr #fan-mode li{
+	width: 24.6%;
+}
+#inroomcontrols .irc-wrpr #fan-mode li:last-child{
+	margin-left:-1px;
+}
+#inroomcontrols .irc-wrpr #heat-mode li{
+	width: 49.6%;
+}
+#inroomcontrols .irc-wrpr .irc-controls li:nth-child(2){
+	border-left: 0px;
+	border-right: 0px;
+}
+#inroomcontrols .irc-wrpr .irc-controls li.active{
+	background-image: url('../images/inroomcontrols/ctrl-slctd-bg.png');
+}
+#inroomcontrols .irc-wrpr .irc-controls li{
+	background-image: url('../images/inroomcontrols/ctrl-nrml-bg.png');
+	background-position: 50% 42%; 
+}
+#inroomcontrols .irc-wrpr .irc-controls li img{
+	width: 100%;
+}
+#inroomcontrols .irc-wrapper{
+	width: 90%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.6);
+    border: 3px solid #929191;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+#inroomcontrols .irc-wrapper .float-whole{
+	width: 100%;
+	overflow: hidden;
+}
+#inroomcontrols .irc-wrapper .float-whole p{
+	margin: 0; padding: 0; 
+}
+#inroomcontrols .irc-wrapper .float-whole>div{
+	float: left;
+}
+#inroomcontrols .irc-wrapper .float-whole>div:first-child{
+	width: 30%;
+}
+#inroomcontrols .irc-wrapper .float-whole>div:first-child img{
+	width: 100%;
+}
+#inroomcontrols .irc-wrapper .float-whole>div:last-child{
+	width: 30%;
+}
+#inroomcontrols .irc-wrapper .float-whole>div:last-child img{
+	width: 100%;
+}
+#inroomcontrols .irc-wrapper .float-whole.scnd{
+	margin-top: 10px;
+}
+#inroomcontrols .irc-wrapper .float-whole.scnd>div{
+	width: 50%;
+}
+#inroomcontrols .irc-wrapper .float-whole.frst>div:last-child{
+	width: 70%;
+}
+#inroomcontrols .curtains-images img{
+	width: 80%;
+}
+
+/* local weather */
+#link_get_widget{
+	display: none!important;
+}
+.local-weather-content .aw-widget-current-inner{
+	height: 300px;	
+}
+
+/* confirm dialog */
+.app-confirm{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.app-confirm>div{
+	display: table;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+.app-confirm>div>div{
+	display: table-cell;
+	vertical-align: middle;	
+}
+.app-confirm>div>div>div{
+	background: #fff;
+	padding: 10px;
+}
+
+/* form handler */
+.form-handler{
+	margin: 100px 0 25px;
+	padding: 18px 10px;
+	background: rgba(0,0,0,0.4);
+}
+
+.hide {
+	display: none;
+}
+
+input[type="radio"]{
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+.radio-lbl{
+	color: #fff;
+}
+.scale-on{
+	-webkit-transform: scale(0.9);
+	-moz-webkit-transform: scale(0.9);
+	-o-webkit-transform: scale(0.9);
+	-transform: scale(0.9);
+}
+
+.bordered {
+	border: 5px solid rgb(51, 195, 251);
+}
+
+#my-pictures-gallery {
+    min-height:250px;
+}
+.ui-tap-hold {
+	display: block;
+	height: 110px;
+	width: 100%;
+	position: relative;
+	z-index:auto;
+	/*background-color: #06f;*/
+	background-image: url('images/loader.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.ui-tap-hold>.ui-tap-hold-container {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	z-index: 0;
+}
+.ui-tap-hold>.ui-tap-hold-container.selected {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.video-thumb {
+	width: 100%;
+	height: 120px;
+}
+@media all and (min-width: 601px){
+	.ui-content .banner{
+  		width: 100%;
+  		background-size: 100% auto;
+  	}
+}
+@media all and (max-width: 768px) {
+  	.ui-content .banner{
+  		width: 100%;
+  		background-size: auto 100%;
+  	}
+  	.ui-content .table{
+  		font-size: 12px;
+  	}
+  	.ui-content .table-wrapper .overlay-title{
+		font-size: 12px;
+	}
+	.palvisionHeaderLogoImg {
+		min-width: 140px;
+		width: 140px;
+  		max-width: 100%;
+  		height: auto;
+  	}
+  	.overlay-title {
+  		font-size: 18px;
+  	}
+}
+@media all and (max-width: 500px) {
+	.palvisionHeaderLogoImg {
+		min-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+}
+@media all and (max-width: 400px) {
+	.palvisionHeaderLogoImg {
+		min-width: 100%;
+		width: 100%;
+  		height: auto;
+  	}
+  	.overlay-title {
+  		font-size: 18px;
+  	}
+}

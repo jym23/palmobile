@@ -1,0 +1,79 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-calendar": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-bluetoothle": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova.plugin.Brightness": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "com.phonegap.plugins.nativesettingsopener": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "com.lampa.startapp": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-imagepicker": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-video-thumbnail": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-open": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "com.xmartlabs.cordova.market": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-applist2": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.palmobileapp.palmobile"
+        }
+    }
+}
